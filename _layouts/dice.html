@@ -1,5 +1,24 @@
 <!DOCTYPE HTML>
 <html lang="en" >
+    <script>
+
+
+        //生成从minNum到maxNum的随机数
+        function randomNum(minNum,maxNum){ 
+            switch(arguments.length){ 
+                case 1: 
+                    a= parseInt(Math.random()*minNum+1,10); 
+                break; 
+                case 2: 
+                    a= parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+                break; 
+                    default: 
+                        a= 0; 
+                    break; 
+            } 
+            document.getElementById("demo").innerHTML=a;
+        } 
+    </script>
     <head>
 
         {%- include head.html -%}
@@ -59,30 +78,10 @@
                 gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
             });
             </script>
+            <p id="demo">点数</p>
+            <button type="button" onclick="randomNum(1,6)">a</button>
         </div>
-        <script>
 
-
-        //生成从minNum到maxNum的随机数
-        function randomNum(minNum,maxNum){ 
-            switch(arguments.length){ 
-                case 1: 
-                    a= parseInt(Math.random()*minNum+1,10); 
-                break; 
-                case 2: 
-                    a= parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
-                break; 
-                    default: 
-                        a= 0; 
-                    break; 
-            } 
-            document.getElementById("demo").innerHTML=a;
-        } 
-        </script>
-        </head>
-        <body>
-        <p id="demo">点数</p>
-        <button type="button" onclick="randomNum(1,6)">a</button>
         {%- include footer.html -%}
 
     </body>
