@@ -53,6 +53,8 @@
                 </div>
 
                 <div class="body-inner">
+                    <p id="demo">点数</p>
+                    <button type="button" onclick="randomNum(1,6)">a</button>
                     {%- include body.html -%}
 
                     {% if page.previous %}
@@ -70,8 +72,7 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     {% endif %}
-                    <p id="demo">点数</p>
-                    <button type="button" onclick="randomNum(1,6)">a</button>
+
                 </div>
             </div>
 
