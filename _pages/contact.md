@@ -6,6 +6,6 @@ category: Jekyll
 layout: post
 ---
 
-email:lingdy18@126.com  
+Email:<lingdy18@126.com>  
 
-github:https://github.com/Colin-008
+Github:<https://github.com/Colin-008>
