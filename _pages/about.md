@@ -1,9 +1,9 @@
 ---
-title: About
-author: Tao He
-date: 2022-02-04
+title: about
+author: Colin
+date: 2023-09-06
 category: Jekyll
 layout: post
 ---
 
-This is an about page.
+Hello!
