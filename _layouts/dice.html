@@ -49,6 +49,8 @@
                             <a href="." >{{ site.title | escape }}</a>
                         {% endif %}
                     </h1>
+                    <p id="demo">点数</p>
+                    <button type="button" onclick="randomNum(1,6)">a</button>
                 </div>
 
                 <div class="body-inner">
@@ -69,6 +71,7 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     {% endif %}
+                    
                 </div>
             </div>
 
@@ -78,8 +81,7 @@
                 gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
             });
             </script>
-            <p id="demo">点数</p>
-            <button type="button" onclick="randomNum(1,6)">a</button>
+
         </div>
 
         {%- include footer.html -%}
