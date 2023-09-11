@@ -1,2 +1,2 @@
 # 博客
-模板来自于https://github.com/sighingnow/jekyll-gitbook
+模板来自于<https://github.com/sighingnow/jekyll-gitbook>
